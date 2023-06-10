@@ -23,11 +23,13 @@ filters = input("Enter filters: ")
 filters = f"{{{filters}}}"
 filters = json.loads(filters)
 
-artistNames = "*"
+functions = artistNames = trackNames = "*"
+if "funcs" in filters:
+    functions = filters["funcs"]
+    print(f"executing functions {functions}")
 if "artists" in filters:
     artistNames = filters["artists"]
     print(f"searching artists {artistNames}")
-trackNames = "*"
 if "tracks" in filters:
     trackNames = filters["tracks"]
     print(f"searching tracks {trackNames}")
@@ -37,7 +39,8 @@ data = None
 with open(dataPath) as dataFile:
     data = json.load(dataFile)
 
-totalMin = filteredListeningTime(data, artistNames, trackNames)
+if "sum" in functions:
+    totalMin = filteredListeningTime(data, artistNames, trackNames)
+    print(f"\nYou listened for\n{int(round(totalMin, 0))} minutes")
 
-print(f"\nYou listened for\n{int(round(totalMin, 0))} minutes")
 print()

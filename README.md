@@ -8,10 +8,10 @@ set the data path in [vars.py](./vars.py) to the path to the exported data
 `python3 main.py`
 
 ## filter schema
-filter by one or more artists and/or tracks
-`"artists":"ARTIST"` or
-`"artists":"ARTIST", "tracks":"TRACK"` or
-`"artists":["ARTIST1", "ARTIST2], "tracks":["TRACK1", "TRACK2"]` etc.
+execute one or more functions filtered by one or more artists and/or tracks
+`"funcs":"FUNCTION", "artists":"ARTIST"` or
+`"funcs":"FUNCTION", "artists":"ARTIST", "tracks":"TRACK"` or
+`"funcs":"FUNCTION", "artists":["ARTIST1", "ARTIST2], "tracks":["TRACK1", "TRACK2"]` etc.
 
 example
-`"artists":"Lorde", "tracks":["The Louvre", "A World Alone"]`
+`"funcs":"sum", "artists":"Lorde", "tracks":["The Louvre", "A World Alone"]`
