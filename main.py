@@ -1,6 +1,7 @@
 import json
+import vars
 
-dataPath = "data/Streaming_History_Audio_2022-2023_0.json"
+dataPath = vars.DATA_PATH
 
 def getArtistName(track):
     return track["master_metadata_album_artist_name"]

@@ -1,6 +1,7 @@
 data/*
 !data/scheme.json
 
+__pycache__
 .DS_Store
 .vscode
 
