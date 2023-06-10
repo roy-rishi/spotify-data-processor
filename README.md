@@ -9,9 +9,9 @@ set the data path in [vars.py](./vars.py) to the path to the exported data
 
 ## filter schema
 filter by one or more artists and/or tracks
-`"artists":"ARTIST"`
-`"artists":"ARTIST", "tracks":"TRACK"`
-`"artists":["ARTIST1", "ARTIST2], "tracks":["TRACK1", "TRACK2"]`
+`"artists":"ARTIST"` or
+`"artists":"ARTIST", "tracks":"TRACK"` or
+`"artists":["ARTIST1", "ARTIST2], "tracks":["TRACK1", "TRACK2"]` etc.
 
 example
 `"artists":"Lorde", "tracks":["The Louvre", "A World Alone"]`
