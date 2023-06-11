@@ -5,6 +5,10 @@
 set the data path in [vars.py](./vars.py) to the path to the exported data
 
 ## usage
+first, preprocess all files with
+`python3 preprocessor.py`
+
+then, run the processor
 `python3 main.py`
 
 ## filter schema
