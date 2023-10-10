@@ -17,7 +17,8 @@ execute one or more functions filtered by one or more artists and/or tracks
 `"funcs":"FUNCTION", "artists":"ARTIST", "tracks":"TRACK"` or
 `"funcs":"FUNCTION", "artists":["ARTIST1", "ARTIST2], "tracks":["TRACK1", "TRACK2"]` etc.
 
-currently supported functions: `sum`
+currently supported functions: `sum`, `anniversary`
 
 example
 `"funcs":"sum", "artists":"Lorde", "tracks":["The Louvre", "A World Alone"]`
+`"funcs":"anniversary", "artists":"Wintergatan"`
